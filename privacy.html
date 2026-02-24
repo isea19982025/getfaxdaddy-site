@@ -1,27 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — FaxDaddy</title>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'DM Sans', sans-serif; background: #FAFAF7; color: #0A1628; line-height: 1.7; }
-  .container { max-width: 680px; margin: 0 auto; padding: 60px 32px; }
-  a.back { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; color: #3B82F6; text-decoration: none; display: inline-block; margin-bottom: 32px; }
-  h1 { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 36px; margin-bottom: 8px; }
-  .updated { color: #9CA3AF; font-size: 14px; margin-bottom: 32px; }
-  p { margin-bottom: 16px; color: #5A6272; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — FaxDaddy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            color: #1d1d1f;
+            background: #fff;
+            line-height: 1.7;
+            padding: 40px 20px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+        .effective { color: #6e6e73; font-size: 14px; margin-bottom: 32px; }
+        h2 { font-size: 20px; font-weight: 600; margin-top: 32px; margin-bottom: 12px; }
+        p { margin-bottom: 16px; font-size: 15px; color: #333; }
+        ul { margin: 0 0 16px 24px; font-size: 15px; color: #333; }
+        li { margin-bottom: 6px; }
+        a { color: #0071e3; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #e5e5e7; font-size: 13px; color: #6e6e73; }
+    </style>
 </head>
 <body>
-<div class="container">
-  <a href="/" class="back">← FaxDaddy</a>
-  <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: February 2026</p>
-  <p>This privacy policy will be updated with full details before the app launches. FaxDaddy is committed to protecting your personal information and being transparent about how we handle your data.</p>
-  <p>For questions, contact us at <a href="mailto:privacy@getfaxdaddy.com">privacy@getfaxdaddy.com</a>.</p>
-</div>
+    <h1>Privacy Policy</h1>
+    <p class="effective">Effective Date: February 23, 2026</p>
+
+    <p>FaxDaddy ("we," "our," or "us") is operated by Patrick Hutchison. This Privacy Policy explains how we collect, use, and protect your information when you use the FaxDaddy mobile application ("App").</p>
+
+    <h2>1. Information We Collect</h2>
+    <p><strong>Account Information:</strong> When you sign in with Apple, we receive your Apple-provided user identifier and, if you choose to share it, your name and email address. Apple may provide a private relay email address on your behalf.</p>
+    <p><strong>Fax Content:</strong> Documents you scan, import, or create within the App for fax transmission. This includes PDFs, images, and signed documents.</p>
+    <p><strong>Fax Metadata:</strong> Recipient fax numbers, transmission timestamps, delivery status, and page counts.</p>
+    <p><strong>Contacts:</strong> Fax recipient names and numbers you choose to save within the App. We do not access your device's address book.</p>
+    <p><strong>Device Information:</strong> Device token for push notifications, device type, and operating system version.</p>
+    <p><strong>Usage Data:</strong> App interaction events collected via Firebase Analytics, such as screens viewed, features used, and onboarding completion. This data is aggregated and not linked to your fax content.</p>
+
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+        <li>To transmit faxes to your designated recipients via our fax service provider</li>
+        <li>To provide delivery confirmations and receipts</li>
+        <li>To manage your account and subscription</li>
+        <li>To send push notifications about fax delivery status and account updates</li>
+        <li>To improve the App through aggregated, anonymous usage analytics</li>
+        <li>To provide customer support</li>
+    </ul>
+
+    <h2>3. How We Store and Protect Your Data</h2>
+    <p><strong>Encryption in Transit:</strong> All data transmitted between your device and our servers is encrypted using TLS 1.3.</p>
+    <p><strong>Encryption at Rest:</strong> Documents stored on our servers are encrypted using AES-256 server-side encryption on AWS S3.</p>
+    <p><strong>Device Security:</strong> Data stored on your device is protected by iOS Data Protection, which encrypts all app data when your device is locked.</p>
+    <p><strong>Access Control:</strong> Your data is isolated to your account. All server queries are scoped to your authenticated user ID. No other user can access your documents or fax history.</p>
+
+    <h2>4. Third-Party Services</h2>
+    <p>We use the following third-party services to operate the App:</p>
+    <ul>
+        <li><strong>Telnyx</strong> — Fax transmission via the Public Switched Telephone Network (PSTN). Telnyx processes your documents solely for the purpose of delivering your fax. <a href="https://telnyx.com/privacy-policy">Telnyx Privacy Policy</a></li>
+        <li><strong>RevenueCat</strong> — Subscription management. RevenueCat processes purchase receipts to manage your subscription status. <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a></li>
+        <li><strong>Firebase Analytics (Google)</strong> — Anonymous usage analytics. No personally identifiable information or document content is shared with Firebase. <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a></li>
+        <li><strong>AWS S3 (Amazon)</strong> — Encrypted document storage. <a href="https://aws.amazon.com/privacy/">AWS Privacy Policy</a></li>
+        <li><strong>Apple</strong> — Authentication (Sign in with Apple), payments (App Store), and push notifications (APNs). <a href="https://www.apple.com/privacy/">Apple Privacy Policy</a></li>
+    </ul>
+
+    <h2>5. Data Sharing</h2>
+    <p>We do <strong>not</strong> sell, rent, or trade your personal information or document content to any third party. Your fax documents are shared only with the third-party services listed above, solely to provide the functionality of the App (e.g., transmitting your fax to the recipient).</p>
+
+    <h2>6. Data Retention</h2>
+    <p>Fax documents are retained on our servers until you delete them from your Vault, or until you delete your account. Fax metadata (delivery records, timestamps) is retained for your reference in your fax history. You may request deletion of all your data at any time by contacting us.</p>
+
+    <h2>7. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+        <li>Access the personal data we hold about you</li>
+        <li>Request correction of inaccurate data</li>
+        <li>Request deletion of your account and all associated data</li>
+        <li>Export your fax history and documents</li>
+        <li>Opt out of analytics tracking via your device's App Tracking Transparency settings</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at <a href="mailto:hello@getfaxdaddy.com">hello@getfaxdaddy.com</a>.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>FaxDaddy is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13. If we learn that we have collected information from a child under 13, we will delete it promptly.</p>
+
+    <h2>9. California Residents (CCPA)</h2>
+    <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act, including the right to know what personal information we collect and the right to request deletion. We do not sell personal information. To submit a request, contact us at <a href="mailto:hello@getfaxdaddy.com">hello@getfaxdaddy.com</a>.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of material changes by posting the updated policy within the App or via push notification. Your continued use of the App after changes are posted constitutes acceptance of the updated policy.</p>
+
+    <h2>11. Contact Us</h2>
+    <p>If you have questions about this Privacy Policy or your data, contact us at:</p>
+    <p>
+        Patrick Hutchison<br>
+        FaxDaddy<br>
+        <a href="mailto:hello@getfaxdaddy.com">hello@getfaxdaddy.com</a>
+    </p>
+
+    <div class="footer">
+        &copy; 2026 FaxDaddy. All rights reserved.
+    </div>
 </body>
 </html>
